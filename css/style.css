@@ -1,0 +1,41 @@
+body {
+    background-color: #05101d;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.nav-link.active {
+    background-color: #B77A91;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    background-color: #05101d;
+}
+
+#navbarNavAltMarkup {
+    background-color: #05101d;
+}
+
+.navbar{
+    background-color: #05101d;
+}

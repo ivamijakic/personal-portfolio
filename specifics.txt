@@ -1,8 +1,8 @@
 // Color scheme:
 Blue Popsicle - #0f2862
-Purple Shadow - #091f36
+Purple Shadow - #05101d
 Grey Blue Leaf - #4f5f76
-Dusty Mauve -#B77A91
+Dusty Mauve - #B77A91
 
 // Fonts:
 Titles – JetBrains Mono Bold
