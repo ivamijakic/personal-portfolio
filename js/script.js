@@ -1,3 +1,5 @@
+/* Change active link based on scroll position */
+
 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
 const sections = document.querySelectorAll("main section");
@@ -35,3 +37,8 @@ navLinks.forEach(link => {
         changeActiveLink(sectionId);
     });
 });
+
+/* Automaticaly change copyright year in footer */
+const currentYear = new Date().getFullYear();
+const copyrightElement = document.querySelector("footer p");
+copyrightElement.innerHTML = `&copy; ${currentYear} Iva.`;

@@ -48,3 +48,22 @@ nav ul{
 .navbar{
     background-color: #05101d;
 }
+
+.card{
+    background-color: #02050c;
+    border: 1px solid #4f5f76;
+}
+
+.btn-dark {
+    background-color: #B77A91;
+    border-color: #B77A91;
+}
+
+.link {
+    color: #B77A91;
+}
+
+.link:hover {
+    color: #4f5f76;
+    text-decoration: underline;
+}
