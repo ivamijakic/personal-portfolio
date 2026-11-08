@@ -1,4 +1,5 @@
 
+/* SMOOTH SCROLLING */
 html {
     scroll-behavior: smooth;
 }
@@ -7,6 +8,7 @@ section {
     scroll-margin-top: 90px;
 }
 
+/* GENERAL PAGE STYLING */
 body {
     background-color: #05101d;
     color: #ffffff;
@@ -18,15 +20,46 @@ a {
     text-decoration: none;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-.nav-link.active {
-    background-color: #B77A91;
+
+/* NAVBAR */
+.navbar {
+    background-color: #05101d;
 }
 
 .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 65px;
+    position: relative;
+}
+
+/* NAME AND SURNAME - LEFT SIDE */
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 0;
+    margin-left: 5px;
+    flex: 1;
+}
+
+.navbar-brand span {
+    color: #B77A91;
+}
+
+.navbar-brand span:hover {
+    color: #ffffff;
+}
+
+/* NAVIGATION LINKS - CENTER */
+.navbar .navbar-collapse {
+    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -36,29 +69,56 @@ nav ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 15px;
     background-color: #05101d;
 }
 
-#navbarNavAltMarkup {
-    background-color: #05101d;
+.navbar .nav-link {
+    color: #ffffff;
+    white-space: nowrap;
 }
 
-.navbar{
-    background-color: #05101d;
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    background-color: #B77A91;
+    color: #ffffff;
 }
 
-.card{
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+        flex-wrap: wrap;
+    }
+
+    .navbar-brand {
+        flex: 1;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* CARDS */
+.card {
     background-color: #02050c;
     border: 1px solid #4f5f76;
 }
 
+/* BUTTONS */
 .btn-dark {
     background-color: #B77A91;
     border-color: #B77A91;
 }
 
+.btn-dark:hover {
+    background-color: #965d73;
+    border-color: #965d73;
+}
+
+/* LINKS */
 .link {
     color: #B77A91;
 }
@@ -67,3 +127,5 @@ nav ul{
     color: #4f5f76;
     text-decoration: underline;
 }
+
+
