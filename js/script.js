@@ -30,7 +30,31 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+const sections = document.querySelectorAll("main section");
 
+const setActive = (id) => {
+    navLinks.forEach(link =>
+        link.classList.toggle("active", link.getAttribute("href") === `#${id}`)
+    );
+};
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) setActive(entry.target.id);
+        });
+    },
+    { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+);
+
+sections.forEach(section => observer.observe(section));
+
+/* Footer year */
+const footerText = document.querySelector("footer p");
+if (footerText) {
+    footerText.textContent = `© ${new Date().getFullYear()} Iva.`;
+}
 navLinks.forEach(link => {
     link.addEventListener("click", function() {
         const sectionId = this.getAttribute("href").substring(1);
