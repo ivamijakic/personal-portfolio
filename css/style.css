@@ -126,12 +126,30 @@ section h2::after {
 .hero-section h2::after { display: none; }
 .hero-description { color: var(--text-dim); max-width: 520px; }
 .profile-image {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 60px rgba(183, 122, 145, 0.25);
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    min-height: 100vh;
+    padding: 5rem 0;
+}
+
+.hero-image { text-align: center; }
+
+/* On phones: stack, with the image on top */
+@media (max-width: 767px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 3rem 0;
+    }
+    .hero-image { order: -1; }
 }
 
 /* CARDS */
