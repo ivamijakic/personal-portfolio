@@ -19,6 +19,7 @@ const observer = new IntersectionObserver(
 
 sections.forEach(section => observer.observe(section));
 
+
 /* Update the copyright year in the footer */
 const footerText = document.querySelector("footer p");
 if (footerText) {
