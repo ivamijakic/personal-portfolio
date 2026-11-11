@@ -140,7 +140,11 @@ section h2::after {
     padding: 5rem 0;
 }
 
-.hero-image { text-align: center; }
+.hero-image { 
+    text-align: center; 
+    width: 500px;
+    height: 280px;
+}
 
 /* On phones: stack, with the image on top */
 @media (max-width: 767px) {
@@ -270,3 +274,17 @@ footer { border-top: 1px solid rgba(79, 95, 118, 0.4); color: var(--text-dim); }
     color: var(--accent);
 }
  
+/* Sources */
+
+#sources { background: var(--surface); }
+
+.sources-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+}
+.sources-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(79, 95, 118, 0.4);
+    color: var(--text-dim);
+}
