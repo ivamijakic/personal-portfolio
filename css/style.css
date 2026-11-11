@@ -288,3 +288,47 @@ footer { border-top: 1px solid rgba(79, 95, 118, 0.4); color: var(--text-dim); }
     border-bottom: 1px solid rgba(79, 95, 118, 0.4);
     color: var(--text-dim);
 }
+
+
+/* Education */
+.education h3 {
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.education-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+    border-left: 2px solid var(--muted);
+}
+
+.education-list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+.education-list li:last-child { padding-bottom: 0; }
+
+/* dot on the timeline */
+.education-list li::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.5rem - 7px);
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.edu-years {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent);
+}
+
+.education-list li span:last-child { color: var(--text-dim); }
